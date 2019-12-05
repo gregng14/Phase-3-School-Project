@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TravelExperts</string>
+    <string name="tab_text">Tab1</string>
+    <string name="tab_text2">Tab2</string>
+</resources>

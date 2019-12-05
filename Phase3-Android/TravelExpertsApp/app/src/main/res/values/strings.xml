@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Travel Experts</string>
+
+    <string name="db_driver_name">com.mysql.jdbc.Driver</string>
+    <string name="db_connection">jdbc:mysql://localhost:3306/travelexperts</string>
+    <string name="db_userid">root</string>
+    <string name="db_password"></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
