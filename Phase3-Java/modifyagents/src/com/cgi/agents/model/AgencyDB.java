@@ -1,0 +1,47 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+/* AgencyDB Class
+ * Contains methods for obtaining data from table "agencies"
+ *
+ * Author: Ivan Ng
+ * Date Created: August 27, 2016
+ * Last Updated: August 27, 2016
+ * Assignment: PROJ207 - Phase Three - Java
+ */
+package com.cgi.agents.model;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Vector;
+
+/**
+ * Contains a connection to the Agencies table
+ * @author 723243
+ */
+public final class AgencyDB {
+    
+    public static Vector<Integer> getAgencyIds() throws ClassNotFoundException, SQLException {
+        
+        Vector<Integer> agencies = new Vector<Integer>();
+        
+        Connection conn = TravelExpertsDB.getConnection();
+        Statement stmt = conn.createStatement();
+        String sql = "SELECT AgencyId FROM agencies";
+        
+        try {
+            ResultSet rs = stmt.executeQuery(sql);
+
+            while(rs.next()) {
+                agencies.addElement(rs.getInt("AgencyId"));
+            }
+        } finally {
+            conn.close();
+        }
+        return agencies;
+    }
+}

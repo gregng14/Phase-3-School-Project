@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 1, 2016, 8:53:47 PM
+    Author     : Charlene Castillo
+*/
+
+.nav-button {
+    -fx-background-radius: 0;
+    -fx-font-family: 'Roboto';
+    -fx-font-weight: 100;
+    -fx-font-size: 14pt;
+    -fx-text-fill: #333;
+    -fx-padding: 0.7em;
+    -fx-padding: 15 15 15 30; 
+    -fx-alignment: CENTER_LEFT;
+}
+
+.scene-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 24pt;
+    -fx-text-fill: #FFF;
+}
+
+.scene-scrollpane {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+}
